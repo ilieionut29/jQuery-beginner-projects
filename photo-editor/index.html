@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo editor</title>
+</head>
+<body>
+    <div class="add-photo-button">
+        <label for="upload-file" class="upload-button">
+            <span class="upload-text"> <i class="far fa-image"> &nbsp; </i> Upload image </span>
+            <input type="file" name="upload-file" id="upload-file" class="hidden-input" accept="image/*">
+        </label>
+    </div>
+
+    <div class="intro-text">
+        <span> 🔥 Upload an image to start editing! 🔥 </span>
+    </div>
+
+    <div class="slider-box off">
+        <button class="left arrow off"> ⬅️ </button>
+         <div class="images-slider responsive850 responsive550">
+        
+         </div>
+         <button class="right arrow off"> ➡️ </button>
+    </div>
+
+    <div class="edit-text  off">
+        <span class="text"> <span class="upparrow"> ⇧ </span> Click on image to start editing! <span class="upparrow"> ⇧ </span> </span>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

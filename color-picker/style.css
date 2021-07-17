@@ -1,0 +1,87 @@
+:root {
+  --egg: #cccdce;
+  --background: #878782;
+}
+
+body {
+  background-color: var(--background);
+}
+
+h1 {
+  font-family: "Roboto";
+  position: relative;
+  top: 30px;
+  font-weight: 1;
+  color: var(--egg);
+}
+
+#container {
+  text-align: center;
+  z-index: 1;
+}
+
+.head {
+  display: block;
+  margin: 30px auto;
+  top: 1vh;
+  width: 180px;
+  height: 180px;
+  background-color: var(--egg);
+  border-radius: 50%;
+}
+
+.egg {
+  display: block;
+  margin: 30px auto;
+  margin-top: 100px;
+  top: 1vh;
+  width: 126px;
+  height: 180px;
+  background-color: var(--egg);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+#mouth {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  font-size: 2.5rem;
+}
+
+#eyeCont {
+  display: grid;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  font-size: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b";
+}
+
+.eye {
+  margin: 10px;
+}
+
+.btn-style {
+  background-color: royalblue;
+  text-align: center;
+  margin-top: 50px;
+  padding: 14px 14px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  border-radius: 12px;
+}
+
+
+
+#canvas {
+  margin: 0 auto;
+  display: block;
+  border: 2px solid black;
+}
+
+#canvas:hover {
+  cursor: crosshair;
+}

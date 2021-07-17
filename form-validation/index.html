@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="box">
+        <div class="form-box">
+            <span class="label-design">Form</span>
+        </div>
+            <form id="form-register" onsubmit="return false">
+
+                <div class="first-name area-design">
+                    <label for="first-name" class="error-highlight label-design">First Name</label>
+                    <input id="first-name" class="input-design" name="firstName" type="text" /> 
+                </div>
+
+                <div class="last-name area-design">
+                    <label for="last-name" class="error-highlight label-design">Last Name</label>
+                    <input id="last-name" class="input-design" name="lastName" type="text" /> 
+                </div>
+
+                <div class="last-name area-design">
+                    <label for="gender" class="error-highlight label-design">Gender</label>
+                    <div class="gender-margin">
+                        <input type="radio" class="gender gender-input" name="gender" id="male">
+                        <label class="gender-label-text" for="male">Male</label>
+                        <input type="radio" class="gender gender-input" name="gender" id="female">
+                        <label class="gender-label-text" for="female">Female</label>
+                    </div> 
+                </div>
+
+                <div class="birth-date area-design">
+                    <label for="birth-date" class="error-highlight label-design">Birth Date</label>
+                    <input id="birth-date" class="input-design" type="date" name="birthDate"> 
+                </div>
+
+                <div class="role area-design">
+                    <label for="select" class="error-highlight label-design">Role</label>
+                    <select class="input-design" id="role" name="roles">
+                        <option value="selector" selected disabled>Select a role...</option>
+                        <option value="Game tester">Game tester</option>
+                        <option value="Game designer">Game designer</option>
+                        <option value="Game developer">Game developer</option>
+                        <option value="Story game creator">Story game creator</option>
+                    </select>
+                </div>
+
+                <div class="area-design">
+                    <label for="uploader" class="error-highlight label-design">Upload a profile picture</label>
+                    <button id="clear-button" type="button">Clear image</button>
+                    <div class="uploader">
+                        <img id="imgPreview" src="" />
+                        <input type="file" name="imgProfile" id="filePhoto" />
+                        <div id="error-center">
+                            <i class="fas fa-3x fa-cloud-upload-alt upload-here"></i>
+                            <div class="text-font upload-here"> Click to browse or drag and drop your image.</div>
+                            <i class="fas fa-3x fa-caret-down drop"></i>
+                            <div class="text-font drop"> Drop the image:</div>
+                            <i class="fas fa-3x fa-exclamation-triangle type"></i>
+                            <div class="text-font type">The file type must be PNG / JPG / JPEG / BMP</div>
+                            <i class="fas fa-3x fa-exclamation-triangle size"></i>
+                            <div class="text-font size">Maximum size is 50kb!</div>
+                            <i class="fas fa-3x fa-exclamation valid-upload"></i>
+                            <div class="text-font valid-upload">You have to upload an image.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="buttons">
+                    <button id="cancel-button" id="clear" type="reset" class="btn">Cancel</button>
+                    <button id="save-button" type="submit" class="btn">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
+    <script async type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

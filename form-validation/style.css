@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-color: #ffffff;
+  width: 830px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #dfe4ea;
+}
+.form-box {
+  height: 80px;
+  background-color: #f1f2f6;
+  border: 1px solid #dfe4ea;
+  display: table-cell;
+  vertical-align: middle;
+  width: 830px;
+}
+.form-box span {
+  color: #0652dd;
+}
+.area-design {
+  height: 60px;
+  width: 830px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+.input-design {
+  width: 750px;
+  height: 30px;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+.label-design {
+  margin-left: 40px;
+  font-family: "Merriweather", serif;
+  font-size: 13px;
+}
+.gender-input {
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.gender-margin {
+  margin-top: 7px;
+}
+.gender-label-text {
+  margin-right: 5px;
+  font-family: "Merriweather", serif;
+  font-size: 13px;
+}
+input[type="date"] {
+  position: relative;
+  padding: 4px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f073";
+  font-size: 17px;
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  color: rgb(3, 3, 3);
+}
+.uploader {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 750px;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid rgba(3, 3, 3, 0.7);
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 7px;
+}
+#filePhoto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+.uploader img {
+  object-fit: contain;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+}
+#imgPreview {
+  display: none;
+  height: 100%;
+}
+#error-center {
+  margin-top: 18px;
+}
+#clear-button {
+  float: right;
+  margin-right: 40px;
+  border: none;
+  color: #222f3e;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  padding: 1px 6px;
+  border: 1px solid #06181f56;
+  cursor: pointer;
+}
+.buttons {
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.btn {
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+  padding: 7px 10px;
+  border: none;
+  width: 115px;
+  height: 40px;
+}
+#cancel-button {
+  background-color: #ffffff;
+  color: #999999;
+  margin-right: 5px;
+}
+#save-button {
+  background-color: #3f6cba;
+  color: #ffffff;
+}
+#cancel-button:hover,
+#save-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+hr {
+  width: 750px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.error {
+  color: red;
+}
+.validImg {
+  border: 3px solid green;
+}
+@media only screen and (max-width: 850px) {
+  .box {
+    width: 500px;
+  }
+  .area-design {
+    width: 500px;
+  }
+  .input-design {
+    width: 430px;
+  }
+  .uploader {
+    width: 430px;
+  }
+  #clear-button {
+    margin-right: 30px;
+    padding: 1px 3px;
+  }
+  hr {
+    width: 430px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .box {
+    width: 315px;
+  }
+  .area-design {
+    width: 315px;
+  }
+  .input-design {
+    width: 245px;
+  }
+  .uploader {
+    width: 245px;
+  }
+  hr {
+    width: 245px;
+  }
+}
+@media only screen and (max-height: 730px) {
+  .box {
+    top:57%
+  }
+}
+@media only screen and (max-height: 645px) {
+  .box {
+    top:65%
+  }
+}
